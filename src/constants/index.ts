@@ -10,7 +10,6 @@ import type {
 import {
   mobile,
   backend,
-  creator,
   web,
   javascript,
   typescript,
@@ -24,7 +23,6 @@ import {
   git,
   figma,
   docker,
-  meta,
   starbucks,
   tesla,
   shopify,
@@ -32,6 +30,16 @@ import {
   jobit,
   tripguide,
   threejs,
+  Dashboard,
+  Mass,
+  smartSol,
+  azlogo,
+  azBran,
+  fours,
+  photograph,
+  Nour,
+  Adhan,
+  // Razan,
 } from "../assets";
 
 export const navLinks: TNavLink[] = [
@@ -47,25 +55,27 @@ export const navLinks: TNavLink[] = [
     id: "contact",
     title: "Contact",
   },
+  {
+    id: "resume",
+    title: "Resume",
+    link: "https://docs.google.com/document/d/e/2PACX-1vSsZuNzdSgwAvo55J2mNvfjlIUJeGdbxlSVaDaIKxI7_C3UDoGSGmpaLhWfzPjDD2FsiqRISKXM9KZP/pub", 
+  },
 ];
 
 const services: TService[] = [
   {
-    title: "Web Developer",
+    title: "Front End development",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "UI/UX designing",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "API Testing",
     icon: backend,
   },
-  {
-    title: "Content Creator",
-    icon: creator,
-  },
+  
 ];
 
 const technologies: TTechnology[] = [
@@ -125,57 +135,48 @@ const technologies: TTechnology[] = [
 
 const experiences: TExperience[] = [
   {
-    title: "React.js Developer",
-    companyName: "Starbucks",
+    title: "App programmer",
+    companyName: "Indorse",
     icon: starbucks,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "August 2024 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    companyName: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      'Experience in designing and executing thorough API tests.',
+     ' API Development and Integration.',
+      'Ability to understand client requirements and propose effective API solutions.',
+     ' Skilled in using Postman for efficient API testing and automation.',
+     ' Skills in troubleshooting API errors and understanding HTTP status codes.',
+     ' Knowledgeable in Swagger for clear API documentation and testing.',
     ],
   },
   {
     title: "Web Developer",
-    companyName: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    companyName: "Sababa Foundation",
+    icon: tesla,
+    iconBg: "#E6DEDD",
+    date: "November 2022 - March 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+     ' Optimized the website front-end for efficiency, scalability, and performance.',
+     ' Optimized website performance for speed, and accessibility.',
+     ' Regularly updated and patched software to maintain website security.',
+     ' Conducted regular site maintenance, including backups and content updates.',
+      
     ],
   },
   {
-    title: "Full stack Developer",
-    companyName: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    title: "Programmer",
+    companyName: "Freelancer",
+    icon: shopify,
+    iconBg: "#383E56",
+    date: "june 2022 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+     ' Built static frontend UI from the ground up using Next.js and Figma handover designs.',
+    '  Explained technical concepts in a way that clients can understand.',
+    '  Identified and resolved any technical issues that arise during development.',
+    '  Develop responsive user interfaces for websites and applications.',
     ],
   },
+  
 ];
 
 const testimonials: TTestimonial[] = [
@@ -207,68 +208,267 @@ const testimonials: TTestimonial[] = [
 
 const projects: TProject[] = [
   {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
+    name: "E-commerce",
+    description:"",
+     tags: [
       {
-        name: "react",
+        name: "HTML-5",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "CSS 3",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "JS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "API",
+        color: "green-text-gradient",
+      },
+      {
+        name: "React-JS",
         color: "pink-text-gradient",
       },
     ],
     image: carrent,
-    sourceCodeLink: "https://github.com/",
+    sourceCodeLink: "https://ecommerce-p-omega.vercel.app/",
   },
   {
-    name: "Job IT",
+    name: "Rwad Aqar",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
+"",    tags: [
+  {
+    name: "HTML-5",
+    color: "blue-text-gradient",
+  },
+  {
+    name: "CSS 3",
+    color: "green-text-gradient",
+  },
+  {
+    name: "JS",
+    color: "pink-text-gradient",
+  },
+  {
+    name: "Figma",
+    color: "green-text-gradient",
+  },
+  
+],
     image: jobit,
-    sourceCodeLink: "https://github.com/",
+    sourceCodeLink: "https://wedyaan.github.io/rwad-aqar/",
   },
   {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    name: "sbabah",
+    description:"",
     tags: [
       {
-        name: "nextjs",
+        name: "Woorpress",
         color: "blue-text-gradient",
       },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
+      
     ],
     image: tripguide,
-    sourceCodeLink: "https://github.com/",
+    sourceCodeLink: "https://sbabah.com/",
   },
+ 
+
+  {
+    name: "Dashboard",
+    description:
+    "",    tags: [
+      {
+        name: "HTML-5",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS 3",
+        color: "green-text-gradient",
+      },
+      {
+        name: "JS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Figma",
+        color: "green-text-gradient",
+      },
+      
+    ],
+    image: Dashboard,
+    sourceCodeLink: "https://gilded-brioche-dc35e1.netlify.app/",
+  },
+  {
+    name: "Mass Media",
+    description:
+    "",    tags: [
+      {
+        name: "HTML-5",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS 3",
+        color: "green-text-gradient",
+      },
+      {
+        name: "JS",
+        color: "pink-text-gradient",
+      },
+      
+      
+    ],
+    image: Mass,
+    sourceCodeLink: "https://marketingportfolio.netlify.app/",
+  },
+  {
+    name: "Adhan Time ",
+    description:
+    "",    tags: [
+      {
+        name: "HTML-5",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS 3",
+        color: "green-text-gradient",
+      },
+      {
+        name: "JS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "React js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "API",
+        color: "pink-text-gradient",
+      },
+      
+      
+    ],
+    image: Adhan,
+    sourceCodeLink: "https://adhantime.netlify.app/",
+  },
+  {
+    name: "Smart Soluation",
+    description:
+    "",    tags: [
+      {
+        name: "HTML-5",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS 3",
+        color: "green-text-gradient",
+      },
+      {
+        name: "JS",
+        color: "pink-text-gradient",
+      },
+      
+      
+    ],
+    image: smartSol,
+    sourceCodeLink: "https://astonishing-cocada-087d82.netlify.app/",
+  },
+  {
+    name: "AbdulAziz Bukhari Logo",
+    description:
+    "",    tags: [
+      {
+        name: "Adobe Illustrator",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Canva",
+        color: "green-text-gradient",
+      },
+    ],
+    image: azlogo,
+    sourceCodeLink: "https://www.canva.com/design/DAGgsHsScxQ/6QyNYHBbK6OKOze4OFgutw/view?utm_content=DAGgsHsScxQ&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h6edec805bb",
+  },
+  {
+    name: "AbdulAziz Bukhari Branding",
+    description:
+    "",    tags: [
+      {
+        name: "Adobe Illustrator",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Canva",
+        color: "green-text-gradient",
+      },
+    ],
+    image: azBran,
+    sourceCodeLink: "https://www.canva.com/design/DAGec3i00Jg/TUwK47Cwd1dCxPGbq85EEQ/view?utm_content=DAGec3i00Jg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h08b37707eb",
+  },
+  {
+    name: "FourtySeven Logo",
+    description:"",
+        tags: [
+      {
+        name: "Adobe Illustrator",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Canva",
+        color: "green-text-gradient",
+      },
+    ],
+    image: fours,
+    sourceCodeLink: "https://www.canva.com/design/DAGgmh7zvoo/cV1KoZL9qAuU9kdEo6Ky7g/view?utm_content=DAGgmh7zvoo&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h29afcde618",
+  },
+   {
+    name: "Photographer Logo",
+    description:
+    "",    tags: [
+      {
+        name: "Adobe Illustrator",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Canva",
+        color: "green-text-gradient",
+      },
+    ],
+    image: photograph,
+    sourceCodeLink: "https://www.canva.com/design/DAGgmm2Gk3A/7WrOBObB7mXgC0aIkRTxsw/view?utm_content=DAGgmm2Gk3A&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h62dc1c17e7",
+  },
+  
+  {
+    name: "Noor makeup Artist Logo",
+    description:
+    "",    tags: [
+      {
+        name: "Adobe Illustrator",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Canva",
+        color: "green-text-gradient",
+      },
+    ],
+    image: Nour,
+    sourceCodeLink: "https://www.canva.com/design/DAGgmoLd8S0/noOlI3nhltpvkvmgn_pAUA/view?utm_content=DAGgmoLd8S0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h9951b15d60",
+  },
+  // {
+  //   name: "Razan Event",
+  //   description:"",
+  //   tags: [
+  //     {
+  //       name: "wuilt",
+  //       color: "blue-text-gradient",
+  //     },
+  //   ],
+  //   image: Razan,
+  //   sourceCodeLink: "https://razanevent.com/",
+  // },
+ 
+  
 ];
 
 export { services, technologies, experiences, testimonials, projects };

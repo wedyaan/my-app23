@@ -40,13 +40,13 @@ type TConfig = {
 
 export const config: TConfig = {
   html: {
-    title: "John Doe — 3D Portfolio",
-    fullName: "John Doe",
-    email: "johndoe@mail.com",
+    title: "Wedyan Aloufi",
+    fullName: "Wedyan Aloufi",
+    email: "wedyaan-aloufi@hotmail.com",
   },
   hero: {
-    name: "John Doe",
-    p: ["I develop 3D visuals, user", "interfaces and web applications"],
+    name: "Wedyan.",
+    p: ["I create visually attractive and user-friendly web interfaces."],
   },
   contact: {
     p: "Get in touch",
@@ -65,13 +65,9 @@ export const config: TConfig = {
   },
   sections: {
     about: {
-      p: "Introduction",
-      h2: "Overview.",
-      content: `I'm a skilled software developer with experience in TypeScript and
-      JavaScript, and expertise in frameworks like React, Node.js, and
-      Three.js. I'm a quick learner and collaborate closely with clients to
-      create efficient, scalable, and user-friendly solutions that solve
-      real-world problems. Let's work together to bring your ideas to life!`,
+      p: "Hi, my name is",
+      h2: "Wedyan Aloufi.",
+      content: ` I'm a passionate Front-End web developer with hands-on experience in building web applications using React.js & Next.js with TypeScript,JavaScript, TailwindCSS, and Prisma, with UI/UX designing.`,
     },
     experience: {
       p: "What I have done so far",
@@ -84,11 +80,7 @@ export const config: TConfig = {
     works: {
       p: "My work",
       h2: "Projects.",
-      content: `Following projects showcases my skills and experience through
-    real-world examples of my work. Each project is briefly described with
-    links to code repositories and live demos in it. It reflects my
-    ability to solve complex problems, work with different technologies,
-    and manage projects effectively.`,
+      content: `I specialize in creating intuitive and responsive web applications using modern technologies, My skills in transforming client requirements into seamless digital experiences ensure optimal performance across devices.`,
     },
   },
 };
