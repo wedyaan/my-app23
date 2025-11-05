@@ -28,7 +28,7 @@ const Navbar = () => {
 
       sections.forEach((current) => {
         const sectionId = current.getAttribute("id");
-        const sectionHeight = current.offsetHeight;
+const sectionHeight = (current as HTMLElement).offsetHeight;
         const sectionTop = current.getBoundingClientRect().top - sectionHeight * 0.2;
 
         if (sectionTop < 0 && sectionTop + sectionHeight > 0) {
