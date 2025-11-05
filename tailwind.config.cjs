@@ -21,6 +21,10 @@ module.exports = {
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.png')",
       },
+      maxWidth: {
+        '8xl': '88rem',
+        '9xl': '96rem',
+      },
     },
   },
   plugins: [],

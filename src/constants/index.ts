@@ -6,6 +6,7 @@ import type {
   TTestimonial,
   TProject,
 } from "../types";
+import weddy from '../assets/Weddy.png';
 
 import {
   mobile,
@@ -40,6 +41,7 @@ import {
   Nour,
   Adhan,
   // Razan,
+   
 } from "../assets";
 
 export const navLinks: TNavLink[] = [
@@ -260,6 +262,28 @@ const projects: TProject[] = [
     image: jobit,
     sourceCodeLink: "https://wedyaan.github.io/rwad-aqar/",
   },
+   {
+    name: "Weddy",
+    description:"",
+    tags: [
+      {
+        name: "Vue-js",
+        color: "blue-text-gradient",
+      },
+       {
+        name: "Laravel",
+        color: "blue-text-gradient",
+      },
+       {
+        name: "SQL",
+        color: "blue-text-gradient",
+      },
+      
+    ],
+    image: weddy,
+    sourceCodeLink: "https://weddy.sa/",
+  },
+
   {
     name: "sbabah",
     description:"",
