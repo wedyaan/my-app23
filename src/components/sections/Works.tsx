@@ -1,8 +1,19 @@
-// Works.tsx - ULTRA SIMPLE VERSION FOR TESTING
- import { projects } from "../../constants";
+import { projects } from "../../constants";
 import { TProject } from "../../types";
 import { FiExternalLink } from "react-icons/fi"; // Import link icon
 
+// Custom hook for navigation logic
+const useNavigation = () => {
+  const openExternalLink = (url: string, target: string = "_blank") => {
+    if (typeof window !== 'undefined' && window.open) {
+      window.open(url, target);
+    } else {
+      console.warn('Window API not available in current environment');
+    }
+  };
+
+  return { openExternalLink };
+};
 
 const ProjectCard: React.FC<TProject> = ({
   name,
@@ -11,6 +22,8 @@ const ProjectCard: React.FC<TProject> = ({
   image,
   sourceCodeLink,
 }) => {
+  const { openExternalLink } = useNavigation();
+
   return (
     <div className="w-full bg-tertiary rounded-2xl p-5">
       <div className="relative h-[230px] w-full">
@@ -21,7 +34,7 @@ const ProjectCard: React.FC<TProject> = ({
         />
         <div className="absolute top-3 right-3">
           <button
-            onClick={() => window.open(sourceCodeLink, "_blank")}
+            onClick={() => openExternalLink(sourceCodeLink)}
             className="bg-black rounded-full p-2 w-10 h-10"
           >
             <FiExternalLink className="w-5 h-5 text-white" />
